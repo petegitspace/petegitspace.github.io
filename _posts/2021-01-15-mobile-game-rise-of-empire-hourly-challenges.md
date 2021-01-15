@@ -108,13 +108,13 @@ During Clash of Province main weeks Sunday is a free development day. During the
 <tr><td>02</td><td>10</td><td>18</td><td>Building + Building Speedup + Dragonite</td></tr>
 <tr><td>03</td><td>11</td><td>19</td><td>Use Training Speedup</td></tr>
 <tr><td>04</td><td>12</td><td>20</td><td>Building + Research + Training Speedup + Dragonite</td></tr>
-<tr><td>05</td><td>13</td><td>21</td><td>Building + Research + Training Speedup/td></tr>
+<tr><td>05</td><td>13</td><td>21</td><td>Building + Research + Training Speedup</td></tr>
 <tr><td>06</td><td>14</td><td>22</td><td>Building + Train Troops</td></tr>
 <tr><td>07</td><td>15</td><td>23</td><td>Research + Train Troops</td></tr>
 </table>
 
 
-
+	
 
 
 <p>Sunday Day 7 - Free Development Days</p>
