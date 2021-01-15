@@ -2,7 +2,7 @@
 layout: default
 title: Peter Noronha Blog
 ---
-<div class="container" style="padding-top:100px;">
+<div class="container" style="padding-top:100px; padding-bottom:100px;">
 
 	
 	<h1>{{ page.title }}</h1>
@@ -20,7 +20,7 @@ title: Peter Noronha Blog
 		<span class="date">{{ post.date }}</span>
 	  </p>
 	  <div class="content">
-		{{ post.content }}
+		{{ post.content | truncatewords: 200 }}
 	  </div>
 	{% endfor %}
 
