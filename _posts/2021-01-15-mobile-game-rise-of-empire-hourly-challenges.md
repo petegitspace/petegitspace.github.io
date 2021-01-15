@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mobile Game Rise Of Empire Hourly Challenges Schedule"
-date: 2020-12-31
+date: 2021-01-15
 ---
 <p>
 Hourly challenges in Rise of Empires were previously called daily challenges.
