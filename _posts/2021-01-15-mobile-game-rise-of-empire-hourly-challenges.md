@@ -28,92 +28,105 @@ var tDate = new Date();
 </p><p>
 (reload page to refresh)
 </p>
+<p>&nbsp;</p>
+<p>Select Time Zone:</p>
+<p>
+	<select id="roeTimeZone"> 
+        <option>Choose Time Zone</option> 
+        <option value="Dubai">Dubai</option> 
+    </select> 
+	<button onclick="changeROETimeFunction()"> 
+      Change Time
+	</button> 
+</p>
+
+<p>&nbsp;</p>
 <p>
 Monday - Day 1 - CoP Gathering
 </p>
 <table>
-<tr><td>00</td><td>08</td><td>16</td><td>Building + Building Speedup + VIP Points</td></tr>
-<tr><td>01</td><td>09</td><td>17</td><td>Building + VIP Points</td></tr>
-<tr><td>02</td><td>10</td><td>18</td><td>Training Speedup + VIP Points</td></tr>
-<tr><td>03</td><td>11</td><td>19</td><td>Building + Training Troops + VIP points</td></tr>
-<tr><td>04</td><td>12</td><td>20</td><td>Building Speedup + Research Speedup + Training Speedup</td></tr>
-<tr><td>05</td><td>13</td><td>21</td><td>Building + Research + Training Speedup + Dragonite</td></tr>
-<tr><td>06</td><td>14</td><td>22</td><td>Building + Research + Training Troops</td></tr>
-<tr><td>07</td><td>15</td><td>23</td><td>Building + crafting</td></tr>
+<tr><td> 00 <b>(<span class="t00"></span>)</b> </td><td> 08 <b>(<span class="t08"></span>)</b> </td><td> 16 <b>(<span class="t16"></span>)</b> </td><td> <i>Building + Building Speedup + VIP Points</i></td></tr>
+<tr><td> 01 <b>(<span class="t01"></span>)</b> </td><td> 09 <b>(<span class="t09"></span>)</b> </td><td> 17 <b>(<span class="t17"></span>)</b> </td><td> <i>Building + VIP Points</td></i></tr>
+<tr><td> 02 <b>(<span class="t02"></span>)</b> </td><td> 10 <b>(<span class="t10"></span>)</b> </td><td> 18 <b>(<span class="t18"></span>)</b> </td><td> Training Speedup + VIP Points</td></tr>
+<tr><td> 03 <b>(<span class="t03"></span>)</b> </td><td> 11 <b>(<span class="t11"></span>)</b> </td><td> 19 <b>(<span class="t19"></span>)</b> </td><td> <i>Building + Training Troops + VIP points</i></td></tr>
+<tr><td> 04 <b>(<span class="t04"></span>)</b> </td><td> 12 <b>(<span class="t12"></span>)</b> </td><td> 20 <b>(<span class="t20"></span>)</b> </td><td> Building Speedup + Research Speedup + Training Speedup</td></tr>
+<tr><td> 05 <b>(<span class="t05"></span>)</b> </td><td> 13 <b>(<span class="t13"></span>)</b> </td><td> 21 <b>(<span class="t21"></span>)</b> </td><td> <i>Building + Research + Training Speedup + Dragonite</i></td></tr>
+<tr><td> 06 <b>(<span class="t06"></span>)</b> </td><td> 14 <b>(<span class="t14"></span>)</b> </td><td> 22 <b>(<span class="t22"></span>)</b> </td><td> <i>Building + Research + Training Troops</i></td></tr>
+<tr><td> 07 <b>(<span class="t07"></span>)</b> </td><td> 15 <b>(<span class="t15"></span>)</b> </td><td> 23 <b>(<span class="t23"></span>)</b> </td><td> <i>Building + crafting</i></td></tr>
 </table>
-
+<p>&nbsp;</p>
 <p>
 Tuesday - Day 2 - CoP Building
 </p>
 <table>
-<tr><td>00</td><td>08</td><td>16</td><td>Building + crafting</td></tr>
-<tr><td>01</td><td>09</td><td>17</td><td>Building + Research + Training Speedup + Dragonite</td></tr>
-<tr><td>02</td><td>10</td><td>18</td><td>Building + crafting</td></tr>
-<tr><td>03</td><td>11</td><td>19</td><td>Use Any Speedup</td></tr>
-<tr><td>04</td><td>12</td><td>20</td><td>Building + Research + crafting</td></tr>
-<tr><td>05</td><td>13</td><td>21</td><td>Building + Building Speedup + Dragonite</td></tr>
-<tr><td>06</td><td>14</td><td>22</td><td>Building + Research</td></tr>
-<tr><td>07</td><td>15</td><td>23</td><td>Building + Research + Train Troops</td></tr>
+<tr><td> 00 <b>(<span class="t00"></span>)</b> </td><td> 08 <b>(<span class="t08"></span>)</b> </td><td> 16 <b>(<span class="t16"></span>)</b> </td><td> <b>Building</b> + crafting</td></tr>
+<tr><td> 01 <b>(<span class="t01"></span>)</b> </td><td> 09 <b>(<span class="t09"></span>)</b> </td><td> 17 <b>(<span class="t17"></span>)</b> </td><td> <b>Building</b> + Research + Training Speedup + Dragonite</td></tr>
+<tr><td> 02 <b>(<span class="t02"></span>)</b> </td><td> 10 <b>(<span class="t10"></span>)</b> </td><td> 18 <b>(<span class="t18"></span>)</b> </td><td> <b>Building</b> + crafting</td></tr>
+<tr><td> 03 <b>(<span class="t03"></span>)</b> </td><td> 11 <b>(<span class="t11"></span>)</b> </td><td> 19 <b>(<span class="t19"></span>)</b> </td><td> Use Any Speedup</td></tr>
+<tr><td> 04 <b>(<span class="t04"></span>)</b> </td><td> 12 <b>(<span class="t12"></span>)</b> </td><td> 20 <b>(<span class="t20"></span>)</b> </td><td> <b>Building</b> + Research + crafting</td></tr>
+<tr><td> 05 <b>(<span class="t05"></span>)</b> </td><td> 13 <b>(<span class="t13"></span>)</b> </td><td> 21 <b>(<span class="t21"></span>)</b> </td><td> <b>Building</b> + Building Speedup + Dragonite</td></tr>
+<tr><td> 06 <b>(<span class="t06"></span>)</b> </td><td> 14 <b>(<span class="t14"></span>)</b> </td><td> 22 <b>(<span class="t22"></span>)</b> </td><td> <b>Building</b> + Research</td></tr>
+<tr><td> 07 <b>(<span class="t07"></span>)</b> </td><td> 15 <b>(<span class="t15"></span>)</b> </td><td> 23 <b>(<span class="t23"></span>)</b> </td><td> <b>Building</b> + Research + Train Troops</td></tr>
 </table>
-
+<p>&nbsp;</p>
 <p>
 Wednesday - Day 3 - CoP Research
 </p>
 <table>
-<tr><td>00</td><td>08</td><td>16</td><td>Use Any Speedup</td></tr>
-<tr><td>01</td><td>09</td><td>17</td><td>Research + Research Speedup</td></tr>
-<tr><td>02</td><td>10</td><td>18</td><td>Building speedup + Research speedup + Training speedup</td></tr>
-<tr><td>03</td><td>11</td><td>19</td><td>Building + Research + crafting</td></tr>
-<tr><td>04</td><td>12</td><td>20</td><td>Building + Research</td></tr>
-<tr><td>05</td><td>13</td><td>21</td><td>Building Speedup + Research Speedup + Training Speedup</td></tr>
-<tr><td>06</td><td>14</td><td>22</td><td>Building + Research + Training Speedup + Dragonite</td></tr>
-<tr><td>07</td><td>15</td><td>23</td><td>Building + Research</td></tr>
+<tr><td> 00 <b>(<span class="t00"></span>)</b> </td><td> 08 <b>(<span class="t08"></span>)</b> </td><td> 16 <b>(<span class="t16"></span>)</b> </td><td> Use Any Speedup</td></tr>
+<tr><td> 01 <b>(<span class="t01"></span>)</b> </td><td> 09 <b>(<span class="t09"></span>)</b> </td><td> 17 <b>(<span class="t17"></span>)</b> </td><td> Research + Research Speedup</td></tr>
+<tr><td> 02 <b>(<span class="t02"></span>)</b> </td><td> 10 <b>(<span class="t10"></span>)</b> </td><td> 18 <b>(<span class="t18"></span>)</b> </td><td> Building speedup + Research speedup + Training speedup</td></tr>
+<tr><td> 03 <b>(<span class="t03"></span>)</b> </td><td> 11 <b>(<span class="t11"></span>)</b> </td><td> 19 <b>(<span class="t19"></span>)</b> </td><td> Building + <b>Research</b> + crafting</td></tr>
+<tr><td> 04 <b>(<span class="t04"></span>)</b> </td><td> 12 <b>(<span class="t12"></span>)</b> </td><td> 20 <b>(<span class="t20"></span>)</b> </td><td> Building + <b>Research</b></td></tr>
+<tr><td> 05 <b>(<span class="t05"></span>)</b> </td><td> 13 <b>(<span class="t13"></span>)</b> </td><td> 21 <b>(<span class="t21"></span>)</b> </td><td> Building Speedup + Research Speedup + Training Speedup</td></tr>
+<tr><td> 06 <b>(<span class="t06"></span>)</b> </td><td> 14 <b>(<span class="t14"></span>)</b> </td><td> 22 <b>(<span class="t22"></span>)</b> </td><td> Building + <b>Research</b> + Training Speedup + Dragonite</td></tr>
+<tr><td> 07 <b>(<span class="t07"></span>)</b> </td><td> 15 <b>(<span class="t15"></span>)</b> </td><td> 23 <b>(<span class="t23"></span>)</b> </td><td> Building + <b>Research</b></td></tr>
 </table>
-
+<p>&nbsp;</p>
 <p>
 Thursday - Day 4 - CoP Hero Development
 </p>
 <table>
-<tr><td>00</td><td>08</td><td>16</td><td>Recruitment + Unlock Skills + Kill Monsters</td></tr>
-<tr><td>01</td><td>09</td><td>17</td><td>All Hero Development</td></tr>
-<tr><td>02</td><td>10</td><td>18</td><td>Unlock Skills + Spend Wisdom Medals + Kill Monsters</td></tr>
-<tr><td>03</td><td>11</td><td>19</td><td>All Hero Development</td></tr>
-<tr><td>04</td><td>12</td><td>20</td><td>Recruitment + Spend Wisdom Medals</td></tr>
-<tr><td>05</td><td>13</td><td>21</td><td>All Hero Development</td></tr>
-<tr><td>06</td><td>14</td><td>22</td><td>Unlock Skills + Spend Wisdom Medals + Kill Monsters</td></tr>
-<tr><td>07</td><td>15</td><td>23</td><td>All Hero Development</td></tr>
+<tr><td> 00 <b>(<span class="t00"></span>)</b> </td><td> 08 <b>(<span class="t08"></span>)</b> </td><td> 16 <b>(<span class="t16"></span>)</b> </td><td> Recruitment + Unlock Skills + Kill Monsters</td></tr>
+<tr><td> 01 <b>(<span class="t01"></span>)</b> </td><td> 09 <b>(<span class="t09"></span>)</b> </td><td> 17 <b>(<span class="t17"></span>)</b> </td><td> <b>All Hero Development</b></td></tr>
+<tr><td> 02 <b>(<span class="t02"></span>)</b> </td><td> 10 <b>(<span class="t10"></span>)</b> </td><td> 18 <b>(<span class="t18"></span>)</b> </td><td> <b>Unlock Skills + Spend Wisdom Medals + Kill Monsters</b></td></tr>
+<tr><td> 03 <b>(<span class="t03"></span>)</b> </td><td> 11 <b>(<span class="t11"></span>)</b> </td><td> 19 <b>(<span class="t19"></span>)</b> </td><td> <b>All Hero Development</b></td></tr>
+<tr><td> 04 <b>(<span class="t04"></span>)</b> </td><td> 12 <b>(<span class="t12"></span>)</b> </td><td> 20 <b>(<span class="t20"></span>)</b> </td><td> <b>Recruitment + Spend Wisdom Medals</b></td></tr>
+<tr><td> 05 <b>(<span class="t05"></span>)</b> </td><td> 13 <b>(<span class="t13"></span>)</b> </td><td> 21 <b>(<span class="t21"></span>)</b> </td><td> <b>All Hero Development</b></td></tr>
+<tr><td> 06 <b>(<span class="t06"></span>)</b> </td><td> 14 <b>(<span class="t14"></span>)</b> </td><td> 22 <b>(<span class="t22"></span>)</b> </td><td> <b>Unlock Skills + Spend Wisdom Medals + Kill Monsters</b></td></tr>
+<tr><td> 07 <b>(<span class="t07"></span>)</b> </td><td> 15 <b>(<span class="t15"></span>)</b> </td><td> 23 <b>(<span class="t23"></span>)</b> </td><td> <b>All Hero Development</b></td></tr>
 </table>
-
+<p>&nbsp;</p>
 <p>
 Friday - Day 5 - CoP Training
 </p>
 <table>
-<tr><td>00</td><td>08</td><td>16</td><td>Use Any Speedup</td></tr>
-<tr><td>01</td><td>09</td><td>17</td><td>Building Speedup + Research Speedup + Training Speedup</td></tr>
-<tr><td>02</td><td>10</td><td>18</td><td>Building + Research + Training Speedup</td></tr>
-<tr><td>03</td><td>11</td><td>19</td><td>Training Speedup</td></tr>
-<tr><td>04</td><td>12</td><td>20</td><td>Building + Research + Training Speedup</td></tr>
-<tr><td>05</td><td>13</td><td>21</td><td>Building + Train Troops</td></tr>
-<tr><td>06</td><td>14</td><td>22</td><td>Research + Train Troops</td></tr>
-<tr><td>07</td><td>15</td><td>23</td><td>Use Any Speedup</td></tr>
+<tr><td> 00 <b>(<span class="t00"></span>)</b> </td><td> 08 <b>(<span class="t08"></span>)</b> </td><td> 16 <b>(<span class="t16"></span>)</b> </td><td> Use Any Speedup</td></tr>
+<tr><td> 01 <b>(<span class="t01"></span>)</b> </td><td> 09 <b>(<span class="t09"></span>)</b> </td><td> 17 <b>(<span class="t17"></span>)</b> </td><td> Building Speedup + Research Speedup + Training Speedup</td></tr>
+<tr><td> 02 <b>(<span class="t02"></span>)</b> </td><td> 10 <b>(<span class="t10"></span>)</b> </td><td> 18 <b>(<span class="t18"></span>)</b> </td><td> Building + Research + Training Speedup</td></tr>
+<tr><td> 03 <b>(<span class="t03"></span>)</b> </td><td> 11 <b>(<span class="t11"></span>)</b> </td><td> 19 <b>(<span class="t19"></span>)</b> </td><td> Training Speedup</td></tr>
+<tr><td> 04 <b>(<span class="t04"></span>)</b> </td><td> 12 <b>(<span class="t12"></span>)</b> </td><td> 20 <b>(<span class="t20"></span>)</b> </td><td> Building + Research + Training Speedup</td></tr>
+<tr><td> 05 <b>(<span class="t05"></span>)</b> </td><td> 13 <b>(<span class="t13"></span>)</b> </td><td> 21 <b>(<span class="t21"></span>)</b> </td><td> Building + <b>Train Troops</b></td></tr>
+<tr><td> 06 <b>(<span class="t06"></span>)</b> </td><td> 14 <b>(<span class="t14"></span>)</b> </td><td> 22 <b>(<span class="t22"></span>)</b> </td><td> Research + <b>Train Troops</b></td></tr>
+<tr><td> 07 <b>(<span class="t07"></span>)</b> </td><td> 15 <b>(<span class="t15"></span>)</b> </td><td> 23 <b>(<span class="t23"></span>)</b> </td><td> Use Any Speedup</td></tr>
 </table>
-
+<p>&nbsp;</p>
 <p>
 During Clash of Province main weeks Sunday is a free development day. During the preparation weeks there is no kill event and both Saturday and Sunday are free development days.
 </p>
 <p>Saturday (Day 6/7) During Kill event - CoP Kill Enemy Troops</p>
 <table>
-<tr><td>00</td><td>08</td><td>16</td><td>Use Any Speedup</td></tr>
-<tr><td>01</td><td>09</td><td>17</td><td>Research + Research Speedup</td></tr>
-<tr><td>02</td><td>10</td><td>18</td><td>Building + Building Speedup + Dragonite</td></tr>
-<tr><td>03</td><td>11</td><td>19</td><td>Use Training Speedup</td></tr>
-<tr><td>04</td><td>12</td><td>20</td><td>Building + Research + Training Speedup + Dragonite</td></tr>
-<tr><td>05</td><td>13</td><td>21</td><td>Building + Research + Training Speedup</td></tr>
-<tr><td>06</td><td>14</td><td>22</td><td>Building + Train Troops</td></tr>
-<tr><td>07</td><td>15</td><td>23</td><td>Research + Train Troops</td></tr>
+<tr><td> 00 <b>(<span class="t00"></span>)</b> </td><td> 08 <b>(<span class="t08"></span>)</b> </td><td> 16 <b>(<span class="t16"></span>)</b> </td><td> Use Any Speedup</td></tr>
+<tr><td> 01 <b>(<span class="t01"></span>)</b> </td><td> 09 <b>(<span class="t09"></span>)</b> </td><td> 17 <b>(<span class="t17"></span>)</b> </td><td> Research + Research Speedup</td></tr>
+<tr><td> 02 <b>(<span class="t02"></span>)</b> </td><td> 10 <b>(<span class="t10"></span>)</b> </td><td> 18 <b>(<span class="t18"></span>)</b> </td><td> Building + Building Speedup + Dragonite</td></tr>
+<tr><td> 03 <b>(<span class="t03"></span>)</b> </td><td> 11 <b>(<span class="t11"></span>)</b> </td><td> 19 <b>(<span class="t19"></span>)</b> </td><td> Use Training Speedup</td></tr>
+<tr><td> 04 <b>(<span class="t04"></span>)</b> </td><td> 12 <b>(<span class="t12"></span>)</b> </td><td> 20 <b>(<span class="t20"></span>)</b> </td><td> Building + Research + Training Speedup + Dragonite</td></tr>
+<tr><td> 05 <b>(<span class="t05"></span>)</b> </td><td> 13 <b>(<span class="t13"></span>)</b> </td><td> 21 <b>(<span class="t21"></span>)</b> </td><td> Building + Research + Training Speedup</td></tr>
+<tr><td> 06 <b>(<span class="t06"></span>)</b> </td><td> 14 <b>(<span class="t14"></span>)</b> </td><td> 22 <b>(<span class="t22"></span>)</b> </td><td> <b>Building + Train Troops</b></td></tr>
+<tr><td> 07 <b>(<span class="t07"></span>)</b> </td><td> 15 <b>(<span class="t15"></span>)</b> </td><td> 23 <b>(<span class="t23"></span>)</b> </td><td> <b>Research + Train Troops</b></td></tr>
 </table>
 
-
+<p>&nbsp;</p>
 	
 
 
@@ -122,7 +135,7 @@ During Clash of Province main weeks Sunday is a free development day. During the
 <br />Default: During the Kill Event weeks Sunday will default to the same events as Saturday
 <br />During Prep weeks both days will default to Research (Day 3) Events
 </p>
-
+<p>&nbsp;</p>
 <p>Challenge meanings and hints</p>
 <p>
 Here are the challenges listed above in more details.
@@ -136,3 +149,68 @@ Here are the challenges listed above in more details.
 <br />crafting - Earn points when you craft a part in the blacksmith building. More points are given for higher quality parts.
 <br />Dragonite - Earn points when you spend Dragonite.
 </p>
+
+
+<script> 
+	function changeROETimeFunction() { 
+	
+		  var roeDateSelection;
+		  roeDateSelection = document.getElementById("roeTimeZone").value;
+		  if(roeDateSelection == "Dubai"){
+			var x, i;
+			x00 = document.querySelectorAll(".t00");
+			x01 = document.querySelectorAll(".t01");
+			x02 = document.querySelectorAll(".t02");
+			x03 = document.querySelectorAll(".t03");
+			x04 = document.querySelectorAll(".t04");
+			x05 = document.querySelectorAll(".t05");
+			x06 = document.querySelectorAll(".t06");
+			x07 = document.querySelectorAll(".t07");
+			x08 = document.querySelectorAll(".t08");
+			x09 = document.querySelectorAll(".t09");
+			x10 = document.querySelectorAll(".t10");
+			x11 = document.querySelectorAll(".t11");
+			x12 = document.querySelectorAll(".t12");
+			x13 = document.querySelectorAll(".t13");
+			x14 = document.querySelectorAll(".t14");
+			x15 = document.querySelectorAll(".t15");
+			x16 = document.querySelectorAll(".t16");
+			x17 = document.querySelectorAll(".t17");
+			x18 = document.querySelectorAll(".t18");
+			x19 = document.querySelectorAll(".t19");
+			x20 = document.querySelectorAll(".t20");
+			x21 = document.querySelectorAll(".t21");
+			x22 = document.querySelectorAll(".t22");
+			x23 = document.querySelectorAll(".t23");
+			for (i = 0; i < x.length; i++) {
+			  //x[i].style.backgroundColor = "red";
+			  x00[i].innerHTML = "04";
+			  x01[i].innerHTML = "05";
+			  x02[i].innerHTML = "06";
+			  x03[i].innerHTML = "07";
+			  x04[i].innerHTML = "08";
+			  x05[i].innerHTML = "09";
+			  x06[i].innerHTML = "10";
+			  x07[i].innerHTML = "11";
+			  x08[i].innerHTML = "12";
+			  x09[i].innerHTML = "13";
+			  x10[i].innerHTML = "14";
+			  x11[i].innerHTML = "15";
+			  x12[i].innerHTML = "16";
+			  x13[i].innerHTML = "17";
+			  x14[i].innerHTML = "18";
+			  x15[i].innerHTML = "19";
+			  x16[i].innerHTML = "20";
+			  x17[i].innerHTML = "21";
+			  x18[i].innerHTML = "22";
+			  x19[i].innerHTML = "23";
+			  x20[i].innerHTML = "00";
+			  x21[i].innerHTML = "01";
+			  x22[i].innerHTML = "02";
+			  x23[i].innerHTML = "03";
+			}
+		  }
+		  
+	} 
+</script>
+
