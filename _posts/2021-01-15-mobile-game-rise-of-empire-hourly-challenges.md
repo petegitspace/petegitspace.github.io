@@ -10,7 +10,7 @@ date: 2021-01-15
 		  var roeDateSelection;
 		  roeDateSelection = document.getElementById("roeTimeZone").value;
 		  if(roeDateSelection == "Dubai"){
-			var x, i;
+			var x00, i;
 			x00 = document.querySelectorAll(".t00");
 			x01 = document.querySelectorAll(".t01");
 			x02 = document.querySelectorAll(".t02");
@@ -35,7 +35,7 @@ date: 2021-01-15
 			x21 = document.querySelectorAll(".t21");
 			x22 = document.querySelectorAll(".t22");
 			x23 = document.querySelectorAll(".t23");
-			for (i = 0; i < x.length; i++) {
+			for (i = 0; i < x00.length; i++) {
 			  //x[i].style.backgroundColor = "red";
 			  x00[i].innerHTML = "04";
 			  x01[i].innerHTML = "05";
